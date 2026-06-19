@@ -8,15 +8,19 @@ public class Locators {
     // =====================
     // PA - Home Page
     // =====================
-    public static final By PA_BRAND_DROPDOWN = By.xpath("//div[contains(@class,'sumo_brand')]");
-    public static final By PA_YEAR_FROM_DROPDOWN = By.xpath("//div[contains(@class,'sumo_year_from')]");
+    public static final By PA_BRAND_DROPDOWN = By.xpath("//*[@id=\"brand\"]");
+    public static final By PA_YEAR_FROM_DROPDOWN = By.xpath("//*[@data-testid=\"yearFromWrapper\"]");
     public static final By PA_CHASSIS_DROPDOWN = By.xpath("//div[contains(@class,'sumo_chassis')]");
     public static final By PA_FUEL_DROPDOWN = By.xpath("//div[contains(@class,'sumo_fuel')]");
     public static final By PA_SEARCH_BUTTON = By.xpath("//button[contains(@class,'js-search-buttons') and not(contains(@class,'advance'))]");
 
     // Dinamicki lokatori za opcije SumoSelect dropdowna
-    public static By paDropdownOption(String dropdownClass, String optionText) {
-        return By.xpath(String.format("//div[contains(@class,'%s')]//label[text()='%s']", dropdownClass, optionText));
+    public static By paDropdownOption(String option, String optionText) {
+        return By.xpath(String.format(
+                "//*[@data-testid='%s-option-%s']",
+                option,
+                optionText
+        ));
     }
 
     // =====================

@@ -16,13 +16,14 @@ public class PaHomePage extends BasePage {
 
     public PaHomePage selectBrand(String brand) {
         waitForClickable(Locators.PA_BRAND_DROPDOWN).click();
-        clickByJs(Locators.paDropdownOption("sumo_brand", brand));
+        clickByJs(Locators.paDropdownOption("brand", brand.toLowerCase()));
         return this;
     }
 
     public PaHomePage selectYearFrom(String year) {
+        waitForVisible(Locators.PA_YEAR_FROM_DROPDOWN);
         waitForClickable(Locators.PA_YEAR_FROM_DROPDOWN).click();
-        clickByJs(Locators.paDropdownOption("sumo_year_from", year));
+        clickByJs(Locators.paDropdownOption("yearFrom", year));
         return this;
     }
 
