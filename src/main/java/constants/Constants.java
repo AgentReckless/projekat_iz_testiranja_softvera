@@ -19,9 +19,10 @@ public class Constants {
     // Pretrage - Polovni Automobili
     public static final String PA_BRAND = "Volkswagen";
     public static final String PA_YEAR_FROM = "2020";
-    public static final String PA_CHASSIS = "Hečbek";
-    public static final String PA_FUEL = "Dizel";
-    public static final String PA_SORT_BY_PRICE = "ceni uzlazno";
+    public static final String PA_CHASSIS = "hecbek";
+    public static final String PA_FUEL = "diesel";
+    public static final String PA_SORT_BY_PRICE = "price_asc";
+    public static final String PA_BAD_SEARCH_TERM = "xyzauto999";
 
     // Verifikacija - Polovni Automobili
     public static final String PA_EXPECTED_BRAND = "Volkswagen";
@@ -29,4 +30,6 @@ public class Constants {
     public static final String PA_EXPECTED_FUEL = "Dizel";
     public static final int PA_EXPECTED_YEAR_FROM = 2020;
 
+
+    // 
 }
