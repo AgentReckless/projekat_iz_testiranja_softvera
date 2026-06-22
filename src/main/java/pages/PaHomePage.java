@@ -83,4 +83,9 @@ public class PaHomePage extends BasePage {
         return this;
     }
 
+    public PaHomePage scrollDownToSearch() {
+        WebElement element = waitForClickable(Locators.PA_BRAND_DROPDOWN);
+        scrollDownToElement(element);
+        return this;
+    }
 }

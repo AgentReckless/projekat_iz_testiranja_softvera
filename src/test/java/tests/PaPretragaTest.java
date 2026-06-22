@@ -12,6 +12,7 @@ public class PaPretragaTest extends BaseTest {
     @Test
     public void pretragaPoKriterijumimaIVerifikacijaOglasa() {
         PaResultsPage resultsPage = new PaHomePage(driver)
+            .scrollDownToSearch()
             .selectBrand(Constants.PA_BRAND)
             .selectYearFrom(Constants.PA_YEAR_FROM)
             .selectChassis(Constants.PA_CHASSIS)

@@ -10,6 +10,7 @@ public class Locators {
     // =====================
     public static final By PA_BRAND_DROPDOWN = By.xpath("//*[@id=\"brand\"]");
     // public static final By PA_YEAR_FROM_DROPDOWN = By.xpath("//*[contains(text(), 'Godište od') or @title='Godište od']");
+
     public static final By PA_YEAR_FROM_DROPDOWN = By.xpath("//*[@data-testid='yearFromPlaceholder']");    
     public static final By PA_CHASSIS_DROPDOWN = By.xpath("//div[@data-testid=\"chassisPlaceholder\"]");
     public static final By PA_FUEL_DROPDOWN = By.xpath("//div[@data-testid=\"fuel\"]");
